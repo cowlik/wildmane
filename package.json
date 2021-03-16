@@ -1,15 +1,20 @@
 {
-  "name": "wildmane",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.0.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "wildmane",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build && next export",
+		"build:preview": "PREVIEW=1 npm run build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "^10.0.8",
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	},
+	"devDependencies": {
+		"gsap": "npm:@gsap/shockingly@^3.6.0",
+		"sass": "^1.29.0"
+	}
 }
