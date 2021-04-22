@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.container {
+	width: 100%;
+	background-image: url(./splatter.png);
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	z-index: 0;
+
+	@media screen and (min-width: $screen-med) {
+		background-size: auto;
+	}
+}

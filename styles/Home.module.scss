@@ -1,6 +1,8 @@
+@import 'variables';
+
 .main {
 	height: 100%;
-	padding: 2rem;
+	padding: $spacing-min;
 	font-size: 0.8rem;
 	display: flex;
 	flex: 1;
@@ -15,15 +17,8 @@
 		height: auto;
 	}
 
-	p {
-		font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-		color: #706956;
-		letter-spacing: 7px;
-		text-transform: uppercase;
-		line-height: 19px;
-	}
-
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $screen-med) {
+		padding: $spacing-max;
 		font-size: 1rem;
 	}
 }
